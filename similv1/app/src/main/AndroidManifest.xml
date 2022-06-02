@@ -28,9 +28,6 @@
             android:name=".SecondActivity6"
             android:exported="false" />
         <activity
-            android:name=".SecondActiviti5"
-            android:exported="false" />
-        <activity
             android:name=".SecondActivity4"
             android:exported="false" />
         <activity
