@@ -1,9 +1,13 @@
 package kr.ac.tukorea.similv1
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.content.res.AssetManager
 import android.os.Bundle
 import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
+import java.io.File
+import java.io.FileOutputStream
+import java.io.InputStream
 
 class MainActivity : AppCompatActivity() {
     lateinit var miljip : ImageView
@@ -15,7 +19,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         for(i in imageId.indices){
             image[i]=findViewById<ImageView>(imageId[i])
         }
@@ -72,6 +75,36 @@ class MainActivity : AppCompatActivity() {
             finishAffinity();
             System.runFinalization();
             System.exit(0);
+        }
+        var assetManager : AssetManager
+        assetManager = resources.assets
+        var  dir = "/data/data/kr.ac.tukorea.similv1/database/"
+        var folder =  File(dir)
+        if(folder.exists()){
+        }else{
+            folder.mkdir()
+        }
+        var file = File(dir+"busstationDB.db")
+        if(!file.exists()){
+            var outFile = File(dir+"busstationDB.db")
+            try{
+                var dbis: InputStream? = null
+                var fo: FileOutputStream? = null
+                var filesize: Int = 0
+                dbis=assetManager.open("busstationDB.db")
+                filesize= dbis.available()
+                if(outFile.length()<=0){
+                    var tempdata = ByteArray(filesize)
+                    dbis.read(tempdata)
+                    dbis.close()
+                    outFile.createNewFile()
+                    fo = FileOutputStream(outFile);
+                    fo.write(tempdata)
+                    fo.close()
+                }
+            }catch(e : Exception){
+
+            }
         }
     }
 }
