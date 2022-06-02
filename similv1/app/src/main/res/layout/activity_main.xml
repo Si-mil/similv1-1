@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mainmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/mainmain" />
+
+    <ScrollView
+        android:id="@+id/bio_scroll"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/mainintro"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginBottom="-10dp"
+            app:srcCompat="@drawable/mainintro" />
+
+        <ImageView
+            android:id="@+id/mainsammi"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mainsammi" />
+
+        <ImageView
+            android:id="@+id/mainmaehwa"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mainmaehwa" />
+
+        <ImageView
+            android:id="@+id/maineunhaeng"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/maineunhaeng" />
+
+        <ImageView
+            android:id="@+id/mainmokgam"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mainmokgam" />
+
+        <ImageView
+            android:id="@+id/maincityhall"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/maincityhall" />
+
+        <ImageView
+            android:id="@+id/mainnoin"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mainnoin" />
+
+        <ImageView
+            android:id="@+id/mainbaegot"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mainbaegot" />
+
+        <ImageView
+            android:id="@+id/mainwolgot"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mainwolgot" />
+
+        <ImageView
+            android:id="@+id/mainoido"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mainoido" />
+
+        <ImageView
+            android:id="@+id/mainemart"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mainemart" />
+
+    </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/mainmiljip"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="40dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/mainmiljip" />
+
+    <ImageView
+        android:id="@+id/mainend"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="150dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/mainend" />
+
+</FrameLayout>
